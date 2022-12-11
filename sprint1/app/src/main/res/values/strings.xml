@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PetShop APP</string>
+
+        //String mainactivity
+    <string name="btn_init">Home</string>
+    <string name="ini_Titulo">PETSHOP</string>
+    <string name="ini_Welcome">Bienvenidos a PetShop</string>
+
+
+    //Strng mainactivity2
+
+    <string name="btn_info_product1">INFO</string>
+    <string name="btn_info_product2">INFO</string>
+    <string name="btn_info_product3">INFO</string>
+    <string name="text_product1">Alimento Gatos</string>
+    <string name="text_product2">Alimento Perros</string>
+    <string name="text_product3">Accesorios PET</string>
+
+
+    <string name="text_title_home">HOME</string>
+    <string name="text_subtitle_home">Elija la categoría de nuestros productos deseado por usted:</string>
+
+
+    //String mainactivity3
+    <string name="btn_info_product">VOLVER</string>
+
+
+
+</resources>
