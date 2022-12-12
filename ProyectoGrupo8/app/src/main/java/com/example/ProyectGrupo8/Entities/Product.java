@@ -1,4 +1,4 @@
-package com.example.sprint1.Entities;
+package com.example.ProyectGrupo8.Entities;
 
 public class Product {
     private int image;

@@ -1,4 +1,4 @@
-package com.example.sprint1.Adapters;
+package com.example.ProyectGrupo8.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,9 +9,9 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.sprint1.Entities.Product;
-import com.example.sprint1.MainActivity3;
-import com.example.sprint1.R;
+import com.example.ProyectGrupo8.Entities.Product;
+import com.example.ProyectGrupo8.MainActivity3;
+import com.example.ProyectGrupo8.R;
 
 import java.util.ArrayList;
 

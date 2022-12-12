@@ -1,11 +1,11 @@
-package com.example.sprint1;
+package com.example.ProyectGrupo8;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.example.sprint1.Adapters.ProductAdapter;
-import com.example.sprint1.Entities.Product;
+import com.example.ProyectGrupo8.Adapters.ProductAdapter;
+import com.example.ProyectGrupo8.Entities.Product;
 
 import java.util.ArrayList;
 
