@@ -3,16 +3,18 @@ package com.example.sprint1;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
+
 import com.example.sprint1.Adapters.ProductAdapter;
-import com.example.sprint1.Entities.Producto;
+import com.example.sprint1.Entities.Product;
+
 import java.util.ArrayList;
 
 
 public class MainActivity2 extends AppCompatActivity {
 
     private ListView listViewProducts;
-    private ArrayList<Producto> arrayProducts;
     private ProductAdapter productAdapter;
+    private ArrayList<Product> arrayProducts;
 
 
 
@@ -21,43 +23,31 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        arrayProducts = new ArrayList<>();
-        Producto producto1 =new Producto(R.drawable.producto1_1,"Producto 1","Descripcion 1",1000);
-        Producto producto2 =new Producto(R.drawable.producto2,"Producto 2","Descripcion 2",500);
-        Producto producto3 =new Producto(R.drawable.producto3,"Producto 3","Descripcion 3",800);
-        Producto producto4 =new Producto(R.drawable.producto4,"Producto 4","Descripcion 4",2000);
-        Producto producto5 =new Producto(R.drawable.producto2_2,"Producto 5","Descripcion 5",3000);
-        Producto producto6 =new Producto(R.drawable.prodcuto1,"Producto 6","Descripcion 6",4000);
-
-        arrayProducts.add(producto1);
-        arrayProducts.add(producto2);
-        arrayProducts.add(producto3);
-        arrayProducts.add(producto4);
-        arrayProducts.add(producto5);
-        arrayProducts.add(producto6);
-
-
-        productAdapter = new ProductAdapter(getApplicationContext(), arrayProducts);
         listViewProducts = (ListView) findViewById(R.id.listViewProducts);
+        arrayProducts = new ArrayList<>();
+
+        Product product1 = new Product(R.drawable.producto1, "Producto1","Descripcion1",1000);
+        Product product2 = new Product(R.drawable.producto2, "Producto2","Descripcion2",2000);
+        Product product3 = new Product(R.drawable.producto3, "Producto3","Descripcion3",3000);
+        Product product4 = new Product(R.drawable.producto4, "Producto4","Descripcion4",4000);
+        Product product5 = new Product(R.drawable.producto5, "Producto5","Descripcion5",5000);
+        Product product6 = new Product(R.drawable.producto6, "Producto6","Descripcion6",6000);
+        Product product7 = new Product(R.drawable.producto7, "Producto7","Descripcion7",7000);
+        Product product8 = new Product(R.drawable.producto8, "Producto8","Descripcion8",8000);
+        Product product9 = new Product(R.drawable.producto9, "Producto9","Descripcion9",9000);
+
+        arrayProducts.add(product1);
+        arrayProducts.add(product2);
+        arrayProducts.add(product3);
+        arrayProducts.add(product4);
+        arrayProducts.add(product5);
+        arrayProducts.add(product6);
+        arrayProducts.add(product7);
+        arrayProducts.add(product8);
+        arrayProducts.add(product9);
+
+        productAdapter = new ProductAdapter(this,arrayProducts);
         listViewProducts.setAdapter(productAdapter);
-
-
-
-        /*
-        //evento para el boton 1
-        buttonProduct1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
-                intent.putExtra("title",textProduct1.getText().toString());
-                intent.putExtra("description","Delicioso alimento para Gatos Balanceado para tu Mascota.");
-                intent.putExtra("imgCode",R.drawable.producto1_1);
-                startActivity(intent);
-            }
-        });
-        */
-
-
 
 
 

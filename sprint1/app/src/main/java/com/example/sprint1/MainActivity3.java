@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class MainActivity3 extends AppCompatActivity {
 
     private Button btnProductInfo;
-    private TextView textProductTitle,textProductDescription;
+    private TextView textProductName,textProductDescription,textProductPrice;
     private ImageView imgProduct;
 
     @Override
@@ -21,14 +21,16 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
 
         btnProductInfo = (Button) findViewById(R.id.btnProductInfo);
-        textProductTitle = (TextView) findViewById(R.id.textProductTitle);
+        textProductName = (TextView) findViewById(R.id.textProductName);
+        textProductPrice = (TextView) findViewById(R.id.textProductPrice);
         imgProduct = (ImageView) findViewById(R.id.imgProduct);
         textProductDescription = (TextView) findViewById(R.id.textProductDescription);
 
         Intent intentIn = getIntent();
-        textProductTitle.setText(intentIn.getStringExtra("name"));
+        textProductName.setText(intentIn.getStringExtra("name"));
 
         textProductDescription.setText(intentIn.getStringExtra("description"));
+        textProductPrice.setText(intentIn.getStringExtra("Price"));
 
         int codeImage = intentIn.getIntExtra("image",0);
         imgProduct.setImageResource(codeImage);

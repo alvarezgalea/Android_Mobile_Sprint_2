@@ -1,16 +1,15 @@
 package com.example.sprint1.Entities;
 
-public class Producto {
+public class Product {
     private int image;
     private String name;
-    private String description;
+    private String Description;
     private int price;
 
-
-    public Producto(int image, String name, String description, int price) {
+    public Product(int image, String name, String description, int price) {
         this.image = image;
         this.name = name;
-        this.description = description;
+        Description = description;
         this.price = price;
     }
 
@@ -31,11 +30,11 @@ public class Producto {
     }
 
     public String getDescription() {
-        return description;
+        return Description;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        Description = description;
     }
 
     public int getPrice() {
