@@ -6,6 +6,7 @@ import android.widget.ListView;
 
 import com.example.ProyectGrupo8.Adapters.ProductAdapter;
 import com.example.ProyectGrupo8.Entities.Product;
+import com.example.sprint1.R;
 
 import java.util.ArrayList;
 

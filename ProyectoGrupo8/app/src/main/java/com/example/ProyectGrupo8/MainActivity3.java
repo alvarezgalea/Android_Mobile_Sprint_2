@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.sprint1.R;
+
 public class MainActivity3 extends AppCompatActivity {
 
     private Button btnProductInfo;
